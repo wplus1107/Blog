@@ -1,15 +1,19 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <navigation-bar/>
+  <blog-footer/>
+  
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
+import BlogFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    NavigationBar
+    NavigationBar,
+    BlogFooter
   }
 }
 </script>
