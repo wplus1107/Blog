@@ -1,13 +1,13 @@
 <template>
     <div id="navigation-bar">
-            <ul>
-                <li><a id="home" href="#">主页</a></li>
-                <li><a id="item" href="#">文章</a></li>
-                <li><a id="item" href="#">标签</a></li>
-                <li><a id="item" href="#">分类</a></li>
-                <li><a id="item" href="#">关于</a></li>
-                <li><a id="item" href="#">搜索</a></li>
-            </ul>
+        <a class="nav-bar-home" href="#">主页</a>
+        <div class="nav-bar-inner">
+            <a class="nav-item" href="#">文章</a>
+            <a class="nav-item" href="#">标签</a>
+            <a class="nav-item" href="#">分类</a>
+            <a class="nav-item" href="#">关于</a>
+            <a class="nav-item" href="#">搜索</a>
+        </div>
     </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
     position: relative;
     right: 0px;
     width: 100%;
-    height: 50px;
+    height: 56px;
     background:  #f8f8f8;
 }
 #navigation-bar:hover {
@@ -30,39 +30,35 @@ export default {
     transition: 250ms;
 }
 
-#navigation-bar>ul {
-    position: fixed;
-    list-style-type: none;
-    margin: 0;
+.nav-bar-inner {
+    position: absolute;
+    /* width: 30%; */
     padding: 0;
-    right: 0px;
+    right: 40px;
+    top: 0px;
 }
 
-#navigation-bar>ul>li {
-    float: left;
-    width: 50px;
-}
-
-#item {
+.nav-item {
     display: block;
+    float: left;
     text-decoration: none;
-    color: #262626;
+    color: #161209;
     text-align: center;
-    font-size: 16px;
     line-height: 50px;
+    padding: 0 10px;
     font-family:微软雅黑, Geneva, sans-serif;
 }
 
-#home {
+.nav-bar-home {
     position: fixed;
-    left: 40px;
+    left: 65px;
     font-weight: bold;
     font-size: 1.5em;
     display: block;
     text-decoration: none;
-    color: #262626;
+    color: #161209;
     text-align: center;
-    line-height: 50px;
+    line-height: 56px;
     font-family:微软雅黑, Geneva, sans-serif;
 }
 
