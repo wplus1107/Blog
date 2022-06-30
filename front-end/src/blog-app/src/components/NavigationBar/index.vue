@@ -6,7 +6,7 @@
             <a class="nav-item" href="#">标签</a>
             <a class="nav-item" href="#">分类</a>
             <a class="nav-item" href="#">关于</a>
-            <a class="nav-item" href="#">搜索</a>
+            <a class="nav-item" href="#"><svg-icon icon-class="search" class-name="search"></svg-icon></a>
         </div>
     </div>
 </template>
@@ -22,12 +22,20 @@ export default {
     position: relative;
     right: 0px;
     width: 100%;
-    height: 56px;
+    height: 50px;
     background:  #f8f8f8;
 }
 #navigation-bar:hover {
     box-shadow: 0px 8px 16px #f0f0f0;
     transition: 250ms;
+}
+
+.svg-icon.search {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -0.2em;
+  fill: currentColor;
+  overflow: hidden;
 }
 
 .nav-bar-inner {
@@ -50,15 +58,14 @@ export default {
 }
 
 .nav-bar-home {
-    position: fixed;
-    left: 65px;
+    padding: 0 40px;
     font-weight: bold;
     font-size: 1.5em;
     display: block;
     text-decoration: none;
     color: #161209;
-    text-align: center;
-    line-height: 56px;
+    text-align: left;
+    line-height: 50px;
     font-family:微软雅黑, Geneva, sans-serif;
 }
 
