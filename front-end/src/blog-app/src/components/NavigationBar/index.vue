@@ -1,13 +1,13 @@
 <template>
     <div id="navigation-bar">
-        <a class="nav-bar-home" href="#">主页</a>
+        <a class="nav-bar-home" href="/">主页</a>
         <div class="nav-bar-inner">
-            <a class="nav-item" href="#">文章</a>
-            <a class="nav-item" href="#">标签</a>
-            <a class="nav-item" href="#">分类</a>
-            <a class="nav-item" href="#">关于</a>
-            <input-text/>
-            <a class="nav-item" href="#"><svg-icon icon-class="search" class-name="search"></svg-icon></a>
+            <router-link :to="{path: '/posts'}" class="nav-item">文章</router-link>
+            <router-link :to="{path: '/tags'}" class="nav-item">标签</router-link>
+            <router-link :to="{path: '/categories'}" class="nav-item">分类</router-link>
+            <router-link :to="{path: '/about'}" class="nav-item">关于</router-link>
+            <!-- <input-text/> -->
+            <router-link :to="{path: '/search'}" class="nav-item"><svg-icon icon-class="search" class-name="search"></svg-icon></router-link>
         </div>
     </div>
 </template>

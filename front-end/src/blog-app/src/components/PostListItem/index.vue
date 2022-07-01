@@ -2,7 +2,7 @@
     <div id="post-list-item">
         <div style="width:60%;float:left;height:100px;position:relative;">
             <div class="title">
-                <a href="#">{{ postData.title }}</a>
+                <router-link :to="{path: '/posts/'+postData.id}">{{ postData.title }}</router-link>
             </div>
             <div class="left-bottom">
                 <div class="date">
@@ -11,10 +11,10 @@
                 <div class="category">
                     <ul>
                         <li v-for="cat in postData.categories" :key="cat">
-                            <a href="#">
+                            <router-link :to="{path: '/categories/'+cat}">
                                 <svg-icon icon-class="category" class-name="category"></svg-icon>
                                 {{ cat }}
-                            </a>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
@@ -25,15 +25,15 @@
             <div class="tags">
                 <ul>
                     <li v-for="tag in postData.tags" :key="tag">
-                        <a href="#">
+                        <router-link :to="{path: '/tags/'+tag}">
                             <svg-icon icon-class="tag" class-name="tag"></svg-icon>
                             {{ tag }}
-                        </a>
+                        </router-link>
                     </li>
                 </ul>
             </div>
             <div class="read-full">
-                <a href="#">阅读全文></a>
+                <router-link :to="{path: '/posts/'+postData.id}">阅读全文></router-link>
             </div>
         </div>
     </div>

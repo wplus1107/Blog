@@ -7,15 +7,15 @@ export function getPosts(page) {
         pageSize: page.pageSize,
         data: [
             {
-                id: 'id1',
+                id: '1',
                 title: "个人博客开发记录",
                 date: '2022-06-26',
                 categories: ['技术', '记录'],
-                tags: ['标签', '标签2'],
+                tags: ['标签1', '标签2'],
                 summary: 'summary...'
             },
             {
-                id: 'id2',
+                id: '2',
                 title: "标题2",
                 date: '2022-06-25',
                 categories: [],
@@ -23,7 +23,7 @@ export function getPosts(page) {
                 summary: 'summary...'
             },
             {
-                id: 'id3',
+                id: '3',
                 title: "标题3",
                 date: '2022-06-24',
                 categories: ['类别2'],
