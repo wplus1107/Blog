@@ -15,6 +15,7 @@ export default {
 <style scoped>
 #blog-footer {
     position: relative;
+    float: right;
     width: 100%;
     bottom: 0px;
 }

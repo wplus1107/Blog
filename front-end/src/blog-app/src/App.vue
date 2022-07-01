@@ -27,7 +27,9 @@
         <ul>
           <li v-for="post in recentPosts" :key="post.id">
             <post-list-item :postData="post"/>
+            <div class="sep-line"></div>
           </li>
+          
         </ul>
       </div>
     </div>
@@ -134,18 +136,19 @@ body {
   border-radius: 50%;
 }
 
-.recent-posts {
-  background: #f6f6f6;
+.recent-posts ul {
   width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
+  
 }
 
 .recent-posts ul li {
-  width: 50%;
-  margin: 0 25%;
-  padding: 10px 0px;
+  margin: 0 30%;
   list-style: none;
+  border-top: 1px dashed #f2f2f2;
+}
+
+.recent-posts ul :first-child {
+  border-top: none;
 }
 
 #app {

@@ -8,17 +8,17 @@ export function getPosts(page) {
         data: [
             {
                 id: 'id1',
-                title: "标题1",
+                title: "个人博客开发记录",
                 date: '2022-06-26',
-                categories: ['类别1', '类别2'],
-                tags: ['标签1', '标签2'],
+                categories: ['技术', '记录'],
+                tags: ['标签', '标签2'],
                 summary: 'summary...'
             },
             {
                 id: 'id2',
                 title: "标题2",
                 date: '2022-06-25',
-                categories: ['类别1'],
+                categories: [],
                 tags: ['标签1'],
                 summary: 'summary...'
             },
@@ -27,7 +27,7 @@ export function getPosts(page) {
                 title: "标题3",
                 date: '2022-06-24',
                 categories: ['类别2'],
-                tags: ['标签2'],
+                tags: [],
                 summary: 'summary...'
             }
         ]

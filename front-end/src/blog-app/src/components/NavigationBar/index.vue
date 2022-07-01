@@ -6,6 +6,7 @@
             <a class="nav-item" href="#">标签</a>
             <a class="nav-item" href="#">分类</a>
             <a class="nav-item" href="#">关于</a>
+            <input-text/>
             <a class="nav-item" href="#"><svg-icon icon-class="search" class-name="search"></svg-icon></a>
         </div>
     </div>
@@ -58,7 +59,7 @@ export default {
 }
 
 .nav-bar-home {
-    padding: 0 40px;
+    margin-left: 50px;
     font-weight: bold;
     font-size: 1.5em;
     display: block;
