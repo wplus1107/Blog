@@ -127,7 +127,7 @@ export default {
 }
 
 .recent-posts ul li {
-  margin: 0 30%;
+  margin: 0 25%;
   list-style: none;
   border-top: 1px dashed #f2f2f2;
 }

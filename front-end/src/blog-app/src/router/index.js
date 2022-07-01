@@ -22,23 +22,37 @@ const routes = [
     {
         path:"/tags",
         name: 'tags',
-        component: HomePage
+        component: HomePage,
+        children: [
+            {
+                path: ":tag",
+                name: 'tag',
+                component: HomePage
+            }
+        ]
     },
-    {
-        path:"/tags/:tag",
-        name: 'tag',
-        component: HomePage
-    },
+    // {
+    //     path:"/tags/:tag",
+    //     name: 'tag',
+    //     component: HomePage
+    // },
     {
         path:"/categories",
         name: 'categories',
-        component: HomePage
+        component: HomePage,
+        children: [
+            {
+                path: ":cat",
+                name: 'category',
+                component: HomePage
+            }
+        ]
     },
-    {
-        path:"/categories/:cat",
-        name: 'category',
-        component: HomePage
-    },
+    // {
+    //     path:"/categories/:cat",
+    //     name: 'category',
+    //     component: HomePage
+    // },
     {
         path:"/about",
         name: 'about',
