@@ -20,7 +20,8 @@ export default {
 
 <style scoped>
 #navigation-bar {
-    position: relative;
+    /* flex: 0 0 auto; */
+    /* position: relative; */
     right: 0px;
     width: 100%;
     height: 50px;

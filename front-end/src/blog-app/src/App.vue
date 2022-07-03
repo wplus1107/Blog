@@ -1,7 +1,9 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <navigation-bar/>
-  <router-view/>
+  <section class="main-content">
+    <router-view/>
+  </section>
   <blog-footer/>
 </template>
 
@@ -25,8 +27,20 @@ export default {
     padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  min-height: 100%;
   background:  #ffffff;
+}
+
+.main-content {
+  flex: 1;
 }
 
 #app {
