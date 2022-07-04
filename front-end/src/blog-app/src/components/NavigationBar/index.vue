@@ -22,8 +22,8 @@ export default {
 #navigation-bar {
     /* flex: 0 0 auto; */
     /* position: relative; */
-    right: 0px;
-    width: 100%;
+    /* right: 0px; */
+    /* width: 100%; */
     height: 50px;
     background:  #f8f8f8;
 }
@@ -43,7 +43,7 @@ export default {
 .nav-bar-inner {
     position: absolute;
     /* width: 30%; */
-    padding: 0;
+    /* padding: 0; */
     right: 40px;
     top: 0px;
 }

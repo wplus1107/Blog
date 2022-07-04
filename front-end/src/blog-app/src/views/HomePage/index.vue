@@ -61,9 +61,9 @@ export default {
 <style scoped>
 #main-container {
   /* display: flex; */
-  justify-content: center;
-  align-items: top;
-  margin: 20px;
+  /* justify-content: center; */
+  /* align-items: top; */
+  padding-top: 20px;
 }
 
 .svg-icon-github {
@@ -75,10 +75,11 @@ export default {
 .self-intro {
   /* background: #fff; */
   width: 100%;
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   color: #000;
-  justify-content: center;
-  align-items: top;
+  /* justify-content: center; */
+  /* align-items: top; */
 }
 
 .title {

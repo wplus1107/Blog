@@ -1,9 +1,9 @@
 <template>
-    <div id="blog-footer">
+    <footer id="blog-footer">
         <a class="blog-footer-contact">copyright - wangjh</a>
         <br/>
         <a class="blog-footer-registration">备案信息</a>
-    </div>
+    </footer>
 </template>
 
 <script>
@@ -17,8 +17,10 @@ export default {
     /* flex: 0 0 auto; */
     /* position: fixed; */
     /* float: right; */
-    width: 100%;
-    bottom: 0px;
+    /* width: 100%; */
+    /* bottom: 0px; */
+    margin-top: 10px;
+    height: 40px;
 }
 
 .blog-footer-contact {
