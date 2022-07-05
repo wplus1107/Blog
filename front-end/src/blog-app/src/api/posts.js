@@ -1,6 +1,6 @@
 // import request from '@/utils/request'
 
-export function getPosts(page) {
+export function getPostsByPage(page) {
     return {
         totalCount: 30,
         pageIndex: page.pageIndex,
@@ -29,6 +29,30 @@ export function getPosts(page) {
                 categories: ['类别2'],
                 tags: [],
                 summary: 'summary...'
+            }
+        ]
+    }
+
+    // return request({
+    //     url: `/api/Posts/page/pageIndex=${page.pageIndex}&pageSize={page.pageSize}`,
+    //     method: 'get'
+    // })
+}
+
+export function getPostsDate() {
+    return {
+        data: [
+            {
+                year: 2022,
+                month: [12,11,10,9,8,7,6,5,4,3,2,1]
+            },
+            {
+                year: 2021,
+                month: [11,9,6,4,2]
+            },
+            {
+                year: 2020,
+                month: [12,10,8,7,5,3,1]
             }
         ]
     }

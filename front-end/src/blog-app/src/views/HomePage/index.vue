@@ -36,7 +36,7 @@
 <script>
 
 import PostListItem from '@/components/PostListItem/index.vue'
-import { getPosts } from '@/api/posts'
+import { getPostsByPage } from '@/api/posts'
 
 export default {
   name: 'HomePage',
@@ -51,7 +51,7 @@ export default {
     //   this.recentPosts = res.data.data
     // })
 
-    this.recentPosts = getPosts({ pageIndex: 0, pageSize: 3 }).data
+    this.recentPosts = getPostsByPage({ pageIndex: 0, pageSize: 3 }).data
 
     console.log(this.recentPosts)
   }

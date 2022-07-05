@@ -1,5 +1,9 @@
 import { createRouter,createWebHashHistory} from "vue-router";
 import HomePage from '@/views/HomePage/index.vue'
+import BlogPosts from '@/views/Posts/index.vue'
+import BlogTags from '@/views/Tags/index.vue'
+import BlogCategories from '@/views/Categories/index.vue'
+import BlogAbout from '@/views/About/index.vue'
 
 const routes = [
     {
@@ -10,53 +14,37 @@ const routes = [
     {
         path: "/posts",
         name: 'posts',
-        component: HomePage,
-        children: [
-            {
-                path: ":postId",
-                name: 'post',
-                component: HomePage
-            }
-        ]
+        component: BlogPosts
+    },
+    {
+        path: "/posts/:postId",
+        name: 'post',
+        component: HomePage
     },
     {
         path:"/tags",
         name: 'tags',
-        component: HomePage,
-        children: [
-            {
-                path: ":tag",
-                name: 'tag',
-                component: HomePage
-            }
-        ]
+        component: BlogTags,
     },
-    // {
-    //     path:"/tags/:tag",
-    //     name: 'tag',
-    //     component: HomePage
-    // },
+    {
+        path: "/tags/:tag",
+        name: 'tag',
+        component: HomePage
+    },
     {
         path:"/categories",
         name: 'categories',
-        component: HomePage,
-        children: [
-            {
-                path: ":cat",
-                name: 'category',
-                component: HomePage
-            }
-        ]
+        component: BlogCategories
     },
-    // {
-    //     path:"/categories/:cat",
-    //     name: 'category',
-    //     component: HomePage
-    // },
+    {
+        path:"/categories/:cat",
+        name: 'category',
+        component: HomePage
+    },
     {
         path:"/about",
         name: 'about',
-        component: HomePage
+        component: BlogAbout
     },
     {
         path:"/search",
