@@ -21,7 +21,9 @@ export default {
 
   },
   data() {
-    categories: []
+    return {
+      categories: []
+    }
   },
   created() {
     // getPosts({ pageIndex: 0, pageSize: 3 }).then(res => {

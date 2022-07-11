@@ -124,7 +124,6 @@ export default {
 
 .recent-posts ul {
   width: 100%;
-  
 }
 
 .recent-posts ul li {
