@@ -17,7 +17,6 @@
         <ul>
           <li v-for="post in posts" :key="post.id">
             <simple-post-list-item :postData="post"/>
-            <div class="sep-line"></div>
           </li>
         </ul>
       </div>
@@ -109,9 +108,9 @@ export default {
   list-style: none;
 }
 
-.posts-list ul li {
+/* .posts-list ul li {
   border-top: 1px dashed #f2f2f2;
-}
+} */
 .posts-list ul :first-child {
   border-top: none;
 }
