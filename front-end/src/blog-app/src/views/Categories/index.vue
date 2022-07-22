@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="categories">
         <ul>
             <li v-for="cat in categories" v-bind:key="cat.id">
                 <router-link :to="{path: '/categories/'+cat.id}">
@@ -38,6 +38,24 @@ export default {
 
 
 <style scoped>
+
+.categories {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.categories ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.categories ul li a{
+  text-decoration: none;
+  color: #262626;
+}
+
+
 .svg-icon.category {
   width: 1rem;
   height: 1rem;
